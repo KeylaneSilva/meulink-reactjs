@@ -41,6 +41,10 @@
     padding: 0 14px;
     font-size: 18px;
     color: #FFF;
+
+    white-space: nowrap; /* não quebrar linha */
+    overflow: hidden; /* esconder, caso passe do espeço*/
+    text-overflow: ellipsis; /* ... */ 
 }
 
 .link svg{
@@ -50,4 +54,26 @@
 .link-delete{
     border: 0;
     background: transparent;
+}
+
+/* responsive */
+
+@media (max-width: 730px){
+    .links-container{
+        width: 90%;
+    }
+    .logo h1{
+        font-size: 40px;
+    }
+
+    .link-item{
+        width: 100%;
+    }
+    .link{
+        width: 100%;
+    }
+    .link svg{
+        display: none;
+    }
+    
 }
